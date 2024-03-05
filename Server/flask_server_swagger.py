@@ -1,5 +1,6 @@
 
 from flask import Flask
+from flask_cors import CORS
 from flask_restx import Resource, Api
 from blue_oceans import BlueOceans
 from flask_cors import CORS
@@ -344,7 +345,7 @@ def save_model_deep():
             })
 
             # CSV 파일로 저장
-            df.to_csv(f"./models/today_Te/{ticker}_{current_date}.csv", index=False)
+            df.to_csv(f"./models/today/{ticker}_{current_date}.csv", index=False)
 
     # 오늘의 AI 랜덤값을 만든다.
     # CSV 파일 읽기
@@ -400,7 +401,7 @@ def save_top10_stock_data_file(marketId='KRX'):
     today_date = datetime.now().strftime('%Y-%m-%d')
 
     top_10_data_path = './top_10_data'
-    today_path = os.path.join(top_10_data_path, 'today_Te')
+    today_path = os.path.join(top_10_data_path, 'today')
     today_backup_path = os.path.join(top_10_data_path, today_date)
 
     if os.path.exists(today_path):
@@ -534,7 +535,7 @@ def make_model(ticker='005930', stt='2010-01-01', end='2023-08-16'):
     y_predicted = y_normaliser.inverse_transform(y_predicted)
 
     assert unscaled_y_test.shape == y_test_predicted.shape
-    model.save(f'./models/today_Te/{ticker}_{current_date}.h5')
+    model.save(f'./models/today/{ticker}_{current_date}.h5')
 
     # 코드 실행 종료 시간 기록
     end_time = time_class.time()
@@ -552,7 +553,7 @@ def get_today():
     return current_date
 
 
-# today_Te 폴더가 있으면 이름을 바꿔주고, 없으면 폴더를 만들어 준다.
+# today 폴더가 있으면 이름을 바꿔주고, 없으면 폴더를 만들어 준다.
 def check_file_name():
     current_date = get_today()
 
@@ -562,8 +563,8 @@ def check_file_name():
     if os.path.exists(original_path):
         try:
             os.rename(original_path, new_path)
-            print(f"폴더 이름 변경 완료: 'today_Te' -> '{current_date}'")
-            logger.info(f"폴더 이름 변경 완료: 'today_Te' -> '{current_date}'")
+            print(f"폴더 이름 변경 완료: 'today' -> '{current_date}'")
+            logger.info(f"폴더 이름 변경 완료: 'today' -> '{current_date}'")
         except Exception as e:
             print(f"폴더 이름 변경 실패: {e}")
             logger.info(f"폴더 생성 실패: {e}")

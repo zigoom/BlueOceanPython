@@ -38,7 +38,7 @@ today_ticker_fields = BlueOceans.model('SearchTodayTickerData', {  # Model 객�
     'date': fields.String(description='날자', required=True, example="2023-08-22"), #날자
 })
 
-@BlueOceans.route('/search-today_Te-tickers',methods=['POST'], doc={"description": "ticker(6자리 숫자) 값을 이용하여 일정 기간의 종목 정보를 검색"})
+@BlueOceans.route('/search-today-tickers',methods=['POST'], doc={"description": "ticker(6자리 숫자) 값을 이용하여 일정 기간의 종목 정보를 검색"})
 class SearchTodayTickerPost(Resource):
     @BlueOceans.expect(today_ticker_fields)
     @BlueOceans.response(200, 'Success', today_ticker_fields)
@@ -46,7 +46,7 @@ class SearchTodayTickerPost(Resource):
     @BlueOceans.response(404, 'Not found')
     @BlueOceans.response(500, 'Internal Error')
     def post(self):
-        logger.info('search-today_Te-tickers 호출')
+        logger.info('search-today-tickers 호출')
         ticker = request.json.get('ticker')
         date = request.json.get('date')
 
