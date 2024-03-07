@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="191f7761-767c-43a6-9527-7bfbfe8b5d7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/stock_data/2024-03-04.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/stock_data/2024-03-05.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/stock_index_data/2024-03-04.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/stock_data/2024-03-06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/stock_index_data/2024-03-06.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/blue_oceans.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/blue_oceans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/flask_server_swagger.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/flask_server_swagger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/stock_index_data/2024-03-05.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Server/stock_index_data/2024-03-05.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +44,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Github/Python/BlueOceanPython/Server/models",
+    "last_opened_file_path": "D:/Github/Python/BlueOceanPython/Server/stock_index_data",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Github\Python\BlueOceanPython\Server\models" />
-      <recent name="D:\Github\Python\BlueOceanPython\Server\stock_data" />
       <recent name="D:\Github\Python\BlueOceanPython\Server\stock_index_data" />
+      <recent name="D:\Github\Python\BlueOceanPython\Server\stock_data" />
+      <recent name="D:\Github\Python\BlueOceanPython\Server\models" />
       <recent name="D:\Github\Python\study\Server\models\today" />
       <recent name="C:\Project\Python\study\Server\models" />
     </key>
